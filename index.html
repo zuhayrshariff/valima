@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valima — Suha &amp; Omair</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@100;300;400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <canvas id="petalCanvas"></canvas>
+  <button class="music-btn" id="musicBtn" aria-label="Play music">♪</button>
+ <audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg" />
+</audio>
+
+  <!-- Envelope -->
+  <div class="envelope-screen" id="envelopeScreen">
+    <div class="rose-overlay"></div>
+    <div class="env-wrapper">
+      <p class="pre-label">A celebration of love</p>
+      <div class="envelope" id="envelope">
+        <div class="env-body">
+          <div class="env-inner-deco"></div>
+        </div>
+        <div class="env-flap" id="envFlap"></div>
+        <div class="env-wax" id="envSeal">
+          <span>S ♡ O</span>
+        </div>
+      </div>
+      <p class="tap-hint" id="tapHint">Tap to unveil</p>
+    </div>
+  </div>
+
+  <!-- Card -->
+  <main class="card-screen hidden" id="cardScreen">
+
+    <div class="hero-section">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <p class="invite-label fade-up">— You Are Invited —</p>
+        <h1 class="hero-title fade-up">Valima</h1>
+        <p class="hero-urdu fade-up">ولیمہ</p>
+        <div class="hero-divider fade-up">
+          <span></span><span class="heart-icon">♡</span><span></span>
+        </div>
+        <div class="names-hero fade-up">
+          <span class="n-groom">Omair Nazir Shariff</span>
+          <span class="n-amp">&amp;</span>
+          <span class="n-bride">Suha Ayesha</span>
+
+        </div>
+      </div>
+      <div class="scroll-indicator">↓</div>
+    </div>
+
+    <section class="couple-intro fade-up">
+      <p class="intro-text">
+        They said "قبول ہے" — and now we feast! Join us as we celebrate the beautiful union of our beloved couple.
+      </p>
+    </section>
+
+    <section class="details-section fade-up">
+      <div class="detail-card">
+        <div class="detail-icon-wrap">📅</div>
+        <div>
+          <p class="d-label">Wedding Day</p>
+          <p class="d-value">Saturday, 11 July 2026</p>
+        </div>
+      </div>
+      <div class="detail-card">
+        <div class="detail-icon-wrap">⏰</div>
+        <div>
+          <p class="d-label">Time</p>
+          <p class="d-value">7:00 PM Onwards</p>
+        </div>
+      </div>
+      <div class="detail-card">
+        <div class="detail-icon-wrap">📍</div>
+        <div>
+          <p class="d-label">Venue</p>
+          <p class="d-value">CMA Royal, Bengaluru</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="message-section fade-up">
+      <div class="message-box">
+        <div class="msg-rose top-rose">🌹</div>
+        <p class="msg-text">
+          With hearts full of gratitude to Allah, we invite you to celebrate our Valima.
+
+Join us as we begin this beautiful journey together and share in our joy, laughter, and blessings.
+
+We look forward to celebrating with you.
+
+بَارَكَ اللّٰهُ لَكُمَا، وَبَارَكَ عَلَيْكُمَا، وَجَمَعَ بَيْنَكُمَا فِي خَيْر<br>ٍ</br>
+
+May Allah bless your union and fill your lives with goodness. ✨
+        </p>
+        <div class="msg-rose bottom-rose">🌹</div>
+      </div>
+    </section>
+
+    <section class="couple-detail-section fade-up">
+      <div class="couple-card">
+        <div class="bride-card">
+          <span class="c-role"></span>
+          <h3 class="c-name">Suha Ayesha</h3>
+          <p class="c-family">D/o Khalid Hussain </p>
+        </div>
+        <div class="couple-heart">♡</div>
+        <div class="groom-card">
+          <span class="c-role"></span>
+          <h3 class="c-name">Omair Nazir Shariff</h3>
+          <p class="c-family">S/o Mr Nawaz Ahmed Shariff</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="schedule-section fade-up">
+      <h3 class="section-heading">Evening Schedule</h3>
+      <div class="schedule-grid">
+        <div class="sched-card">
+          <span class="sc-time">7:00 PM</span>
+          <span class="sc-icon">🚪</span>
+          <span class="sc-name">Doors Open</span>
+        </div>
+        <div class="sched-card">
+          <span class="sc-time">8:00 PM</span>
+          <span class="sc-icon">👰</span>
+          <span class="sc-name">Couple's Arrival</span>
+        </div>
+        <div class="sched-card">
+          <span class="sc-time">8:30 PM</span>
+          <span class="sc-icon">🍽️</span>
+          <span class="sc-name">Grand Dinner</span>
+        </div>
+        <div class="sched-card">
+          <span class="sc-time">9:30 PM</span>
+          <span class="sc-icon">📸</span>
+          <span class="sc-name">Photography</span>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <section class="cta-section fade-up">
+      <a class="btn maps-btn" href="https://maps.google.com/?q=CMA+Royal+Bengaluru" target="_blank">
+        <span>📍</span> View on Google Maps
+      </a>
+      <a class="btn rsvp-btn" href="https://wa.me/919108405996?text=Assalamualaikum!%20We%20are%20excited%20to%20attend%20the%20Walima%20of%20Suha%20%26%20Omair%20InshAllah%20%F0%9F%8C%B9" target="_blank">
+        <span>💬</span> Reply with WhatsApp
+      </a>
+    </section>
+
+    <footer class="card-footer fade-up">
+      <div class="footer-pattern"></div>
+      <p class="footer-main">Celebrating with gratitude to Allah</p>
+      <p class="footer-arabic">الحمد لله</p>
+      <p class="footer-families">Families of Suha &amp; Omair</p>
+      <p class="footer-hashtag">#SuhaAndOmair2026</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
